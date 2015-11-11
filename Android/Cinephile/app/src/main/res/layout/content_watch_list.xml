@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.support.android.designlibdemo.WatchList"
+    tools:showIn="@layout/app_bar_watch_list">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/watchlist_container_for_scrollView_relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/your_watchlist_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Your watchlist"
+                android:textSize="16dp"
+                android:textColor="#E65100"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/movie_collection_relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/your_watchlist_textView"
+                android:layout_gravity="bottom"
+                android:background="#dddddd">
+
+                <LinearLayout
+                    android:id="@+id/movie_row1_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView1_1"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_heart_of_the_sea" />
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView1_2"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_mi5" />
+
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView1_3"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_star_wars" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/title_row1_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movie_row1_linearLayout">
+
+                    <TextView
+                        android:id="@+id/watch_list_textView1_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Heart of the Sea" />
+
+                    <TextView
+                        android:id="@+id/watch_list_textView1_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="MI5" />
+
+                    <TextView
+                        android:id="@+id/watch_list_textView1_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Star Wars" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/movie_row2_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_row1_linearLayout">
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView2_1"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_spectre" />
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView2_2"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_kung_fu_panda" />
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView2_3"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_deadpool" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/title_row2_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movie_row2_linearLayout"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/watch_list_textView2_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Spectre" />
+
+                    <TextView
+                        android:id="@+id/watch_list_textView2_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Kunf Fu Panda" />
+
+                    <TextView
+                        android:id="@+id/watch_list_textView2_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Deadpool" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/movie_row3_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_row2_linearLayout">
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView3_1"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_antman" />
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView3_2"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_macbeth" />
+
+                    <ImageView
+                        android:id="@+id/watch_list_imageView3_3"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_hunger_games" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/title_row3_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movie_row3_linearLayout">
+
+                    <TextView
+                        android:id="@+id/watch_list_textView3_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Antman" />
+
+
+                    <TextView
+                        android:id="@+id/watch_list_textView3_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Macbeth" />
+
+                    <TextView
+                        android:id="@+id/watch_list_textView3_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="16dp"
+                        android:text="Hunger Games" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
