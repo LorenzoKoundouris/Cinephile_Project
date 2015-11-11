@@ -1,4 +1,4 @@
-![alt text](http://imgur.com/cSG4lFC)
+![alt text](http://i.imgur.com/cSG4lFC.png)
 
 This is a repository of Lorenzo Koundouris
 
