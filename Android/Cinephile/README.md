@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/chrisbanes/cheesesquare/master/art/icon.png)
+![alt text](http://imgur.com/cSG4lFC)
 
 This is a repository of Lorenzo Koundouris
 
